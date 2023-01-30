@@ -1,0 +1,8 @@
+.toggle-input:checked + .toggle-slider::before {
+    transform: translateX(32px);
+}
+
+.toggle-input:checked + .toggle-slider{
+    background: #FFFFFF
+
+}
