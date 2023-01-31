@@ -6,7 +6,7 @@ import { CardExp } from "./CardExp";
 
 export function Experience() {
   return (
-    <div className=" bg-background h-full">
+    <div className="h-full">
         <div className="mt-24">
             <Heading
             title="Minhas qualificações"

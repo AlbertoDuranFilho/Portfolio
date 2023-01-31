@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { About } from "./components/About";
 import { Contact } from "./components/Contact";
 import { Experience } from "./components/Experience";
@@ -5,31 +6,73 @@ import { Footer } from "./components/Footer";
 import { Head } from "./components/Head";
 import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
-
-import Git from './assets/git-mini.svg'
-import LinkedIn from './assets/linkedIn-mini.svg'
-import Email from './assets/email-mini.svg'
-import Whatsapp from './assets/whatsapp-mini.svg'
+import { SvgIcon }from './components/SvgIcon'
 
 export function App() {
+  const [theme, setTheme] = useState('');
+
+  useEffect(() => {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches){
+      setTheme('dark')
+    } else {
+      setTheme('light')
+    }
+  }, [] )
+
+  useEffect(() => {
+    if (theme === 'dark'){
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  }, [theme] )
+
+  function handleThemeSwitch(){
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  } 
 
   return (
-    <div className="bg-background">
-      <Head />
-      <main className=' bg-background h-screen flex justify-center items-center' >
+    <div className="dark:bg-background bg-backgroundlight">
+      <Head click={handleThemeSwitch} />
+      <main className=' dark:bg-background bg-backgroundlight h-screen flex justify-center items-center' >
         <div className=' flex flex-col items-center' >
-          <h1 className='text-white text-4xl'>Alberto Duran</h1>
-          <p className='text-2xl text-white mt-1' >Desenvolvedor Front-End</p>
-          <button className='mt-5 w-44 h-10 rounded-lg border-primary border-2 text-white transition hover:bg-primary hover:scale-110'>Saiba Mais</button>
+          <h1 className='dark:text-white text-secundary text-4xl font-russo-one'>Alberto Duran</h1>
+          <p className='text-2xl dark:text-white text-secundary mt-1' >Desenvolvedor Front-End</p>
+          <button className='mt-5 w-44 h-10 rounded-lg border-primary border-2 dark:text-white text-secundary transition hover:bg-primary hover:text-white hover:scale-110'>CV</button>
         </div>
       </main>
-      <div className="bg-background mt-[-120px] text-white flex items-center justify-around">
+      <div className="mt-[-120px flex items-center justify-around">
         <div className="w-4"></div>
-        <div className=" w-60 flex justify-around items-center ">
-          <a href="" target='_blank'><img className=" duration-300 hover:opacity-70" src={Git} alt="" /></a>
-          <a href="" target='_blank'><img className=" duration-300 hover:opacity-70"  src={LinkedIn} alt=""/></a>
-          <a href="" target='_blank'><img className=" duration-300 hover:opacity-70"  src={Email} alt="" /></a>
-          <a href="" target='_blank'><img className=" duration-300 hover:opacity-70"  src={Whatsapp} alt="" /></a>
+        <div className=" w-60 flex fill-secundary dark:fill-white justify-around items-center ">
+
+         <a className=" duration-150 hover:opacity-70 fill-secundary dark:fill-white"  href="" target='_blank'>
+            <SvgIcon
+              iconName="git-mini"
+              svgProp={{ width: 25, height: 22, fill: "" }}
+            />
+          </a>
+
+         <a className=" duration-150 hover:opacity-70 fill-secundary dark:fill-white"  href="" target='_blank'>
+            <SvgIcon
+              iconName="linkedin-mini"
+              svgProp={{ width: 25, height: 22, fill: "" }}
+            />
+          </a>
+
+         <a className=" duration-150 hover:opacity-70 fill-secundary dark:fill-white"  href="" target='_blank'>
+            <SvgIcon
+              iconName="email-mini"
+              svgProp={{ width: 25, height: 22, fill: "" }}
+            />
+          </a>
+
+         <a className=" duration-150 hover:opacity-70 fill-secundary dark:fill-white"  href="" target='_blank'>
+            <SvgIcon
+              iconName="whatsapp-mini"
+              svgProp={{ width: 25, height: 22, fill: "" }}
+            />
+          </a>
+         
         </div>
         <div></div>
       </div>

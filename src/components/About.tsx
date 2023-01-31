@@ -7,7 +7,7 @@ export function About(){
             <Heading title='Um pouco da minha historia...' subtitle='Sobre' />
             <div className=" flex justify-center mt-28 ">
                 <img className="w-36 h-36" src={FaceImg} alt="" />
-                <p className=' w-[31.25rem] ml-12 text-white' >Minha historia com o universo da programação começa desde os 15 anos, 
+                <p className=' w-[31.25rem] ml-12 dark:text-white text-secundary' >Minha historia com o universo da programação começa desde os 15 anos, 
                     quando comecei a aprender Pascal com meu tio. 
                     Ao decorrer da minha jornada acabei indo para o caminho da eletrônica, 
                     onde aprender a programação de baixo nível, 
