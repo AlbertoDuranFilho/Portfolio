@@ -15,6 +15,15 @@ export function Experience() {
             />
         </div>
         <CardExp
+            job="CESAR School"
+            date="Jan 2023 - Jul 2025"
+            img={Educ}
+            exp="Gestão de Tecnologia da Informação"
+            text="  Como aluno representando a escola SENAI areias de Pernambuco na modalidade de Robótica, 
+                    onde ficava responsável pela programação do robô.  
+                    Era utilizado uma IDE própria num linguagem de blocos ou utilizando a linguagem C. "
+        />
+        <CardExp
             job="Freelancer"
             date="Maio 2021 - Presente"
             img={Job}

@@ -18,10 +18,10 @@ export function Contact(){
             </div>
 
             <div className="flex items-center justify-around max-md:flex-col">
-                <CardContact title="Email" subtitle="albertoduranfilho@gmail.com" img={Email} />
-                <CardContact title="WhatsApp" subtitle="+55 81 99751-9315" img={Whatsapp} />
-                <CardContact title="LinkedIn" subtitle="@alberto-janeiro" img={LinkedIn} />
-                <CardContact title="GitHub" subtitle="@albertoduranfilho" img={Git} />
+                <CardContact title="Email" subtitle="albertoduranfilho@gmail.com" img={Email} url="mailto:albertoduranfilho@gmai.com?" />
+                <CardContact title="WhatsApp" subtitle="+55 81 99751-9315" img={Whatsapp} url="https://wa.me/5581997519315" />
+                <CardContact title="LinkedIn" subtitle="@alberto-janeiro" img={LinkedIn} url="https://linkedin.com/in/alberto-janeiro/" />
+                <CardContact title="GitHub" subtitle="@albertoduranfilho" img={Git} url="https://github.com/AlbertoDuranFilho" />
             </div>
     
         </div>

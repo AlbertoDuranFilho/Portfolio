@@ -37,7 +37,7 @@ export function App() {
       <main className=' dark:bg-background bg-backgroundlight h-screen flex justify-center items-center' >
         <div className=' flex flex-col items-center' >
           <h1 className='dark:text-white text-secundary text-4xl font-russo-one'>Alberto Duran</h1>
-          <p className='text-2xl dark:text-white text-secundary mt-1' >Desenvolvedor Front-End</p>
+          <p className='text-2xl dark:text-white text-secundary mt-1 font-roboto' >Desenvolvedor Front-End</p>
           <button className='mt-5 w-44 h-10 rounded-lg border-primary border-2 dark:text-white text-secundary transition hover:bg-primary hover:text-white hover:scale-110'>CV</button>
         </div>
       </main>
@@ -45,28 +45,28 @@ export function App() {
         <div className="w-4"></div>
         <div className=" w-60 flex fill-secundary dark:fill-white justify-around items-center ">
 
-         <a className=" duration-150 hover:opacity-70 fill-secundary dark:fill-white"  href="" target='_blank'>
+         <a className=" duration-150 hover:opacity-70 fill-secundary dark:fill-white hover:fill-primary"  href="https://github.com/AlbertoDuranFilho" target='_blank'>
             <SvgIcon
               iconName="git-mini"
               svgProp={{ width: 25, height: 22, fill: "" }}
             />
           </a>
 
-         <a className=" duration-150 hover:opacity-70 fill-secundary dark:fill-white"  href="" target='_blank'>
+         <a className=" duration-150 hover:opacity-70 fill-secundary dark:fill-white hover:fill-primary"  href="https://linkedin.com/in/alberto-janeiro/" target='_blank'>
             <SvgIcon
               iconName="linkedin-mini"
               svgProp={{ width: 25, height: 22, fill: "" }}
             />
           </a>
 
-         <a className=" duration-150 hover:opacity-70 fill-secundary dark:fill-white"  href="" target='_blank'>
+         <a className=" duration-150 hover:opacity-70 fill-secundary dark:fill-white hover:fill-primary"  href="mailto:albertoduranfilho@gmai.com?" target='_blank'>
             <SvgIcon
               iconName="email-mini"
               svgProp={{ width: 25, height: 22, fill: "" }}
             />
           </a>
 
-         <a className=" duration-150 hover:opacity-70 fill-secundary dark:fill-white"  href="" target='_blank'>
+         <a className=" duration-150 hover:opacity-70 fill-secundary dark:fill-white hover:fill-primary"  href="https://wa.me/5581997519315" target='_blank'>
             <SvgIcon
               iconName="whatsapp-mini"
               svgProp={{ width: 25, height: 22, fill: "" }}
