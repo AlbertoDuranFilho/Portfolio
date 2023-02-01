@@ -3,6 +3,7 @@ import { Heading } from "./Heading";
 
 import Montes from '../assets/montes-site.png'
 import vlc from '../assets/vlc-site.png'
+import GithubFinder from '../assets/github-finder.png'
 
 export function Projects(){
     return(
@@ -15,11 +16,11 @@ export function Projects(){
             </div>
 
             <div className="flex justify-center ">
-                <CardProject title="Montês Tecnologia" img={Montes} url='www.montestecnologia.com.br' />
-                <CardProject title="VLC Pedais" img={vlc} url='vlcpedais.com.br' />
+                <CardProject title="Montês Tecnologia" img={Montes} url='https://www.montestecnologia.com.br' />
+                <CardProject title="VLC Pedais" img={vlc} url='https://vlcpedais.com.br' />
             </div>
             <div className="flex justify-center ">
-                <CardProject title="Montês Tecnologia" img={Montes} url='www.montestecnologia.com.br' />
+                <CardProject title="GitHub Finder" img={GithubFinder} url='https://github.com/AlbertoDuranFilho/GitHub-Finder' />
                 <CardProject title="Montês Tecnologia" img={Montes} url='www.montestecnologia.com.br' />
             </div>
         </div>
